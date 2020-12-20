@@ -24,7 +24,7 @@ The Windows Media Center Project
 
 ## Releases
 
-The latest [releases](https://github.com/Sipylus/Windows-Media-Center/releases) were restores the following Microsoft SQL CE components:
+The latest [releases](https://github.com/Sipylus/Windows-Media-Center/releases) restores the following Microsoft SQL CE components in Windows 10:
 * sqlcecompact40
 * sqlceoledb40
 * sqlceqp40
