@@ -2,10 +2,15 @@
 The Windows Media Center Project 
 
 ## Table of Contents
-
+* [Compatibility](#compatibility)
+* [Configuration](#configuration)
 * [Releases](#releases)
 
-## Releases
+## Compatibility
+* Windows 7/8/8.1/10
+* Windows Server 2012 R2/Server 2016 R2
+
+## Configurtion
 * Windows Media Center (Black)
 * [Windows Media Center (Blue)](https://github.com/Sipylus/Windows-Media-Center/releases/tag/blue)
 * [Windows Media Center (Green)](https://github.com/Sipylus/Windows-Media-Center/releases/tag/green)
@@ -13,9 +18,10 @@ The Windows Media Center Project
 * Windows Media Center (Red)
 * Windows Media Center (Yellow)
 
-## Compatibility
+## Releases
+The latest [releases](https://github.com/Sipylus/Windows-Media-Center/releases) were restores the following Microsoft SQL CE components
+* sqlcecompact40
+* sqlceoledb40
+* sqlceqp40
+* sqlcese40
 
-* Windows 7
-* Windows 8
-* Windows 8.1/Server 2012 R2
-* Windows 10/Server 2016 R2
