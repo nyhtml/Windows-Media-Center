@@ -13,7 +13,7 @@ The Windows Media Center Project
 * Windows 7/8/8.1/10
 * Windows Server 2012 R2/Server 2016 R2
 
-## Configurtion
+## Configuration
 
 * Windows Media Center (Black)
 * [Windows Media Center (Blue)](https://github.com/Sipylus/Windows-Media-Center/releases/tag/blue)
