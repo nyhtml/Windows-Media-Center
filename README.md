@@ -16,15 +16,15 @@ The Windows Media Center Project
 ## Configuration
 
 * Windows Media Center (Black)
-* [Windows Media Center (Blue)](https://github.com/Sipylus/Windows-Media-Center/releases/tag/blue)
-* [Windows Media Center (Green)](https://github.com/Sipylus/Windows-Media-Center/releases/tag/green)
+* [Windows Media Center (Blue)](https://github.com/nyhtml/Windows-Media-Center/releases/tag/blue)
+* [Windows Media Center (Green)](https://github.com/nyhtml/Windows-Media-Center/releases/tag/green)
 * Windows Media Center (Grey)
 * Windows Media Center (Red)
 * Windows Media Center (Yellow)
 
 ## Releases
 
-The latest [releases](https://github.com/Sipylus/Windows-Media-Center/releases) restores the following Microsoft SQL CE components in Windows 10:
+The latest [releases](https://github.com/nyhtml/Windows-Media-Center/releases) restores the following Microsoft SQL CE components in Windows 10:
 * sqlcecompact40
 * sqlceoledb40
 * sqlceqp40
