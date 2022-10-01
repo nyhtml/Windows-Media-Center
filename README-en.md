@@ -1,7 +1,7 @@
 ## Table of Contents
 
 * [Compatibility](#compatibility)
-* [Configuration](#configuration)
+* [Theme](#theme)
 * [Releases](#releases)
 
 ## Compatibility
@@ -9,7 +9,7 @@
 * Windows 7/8/8.1/10/11
 * Windows Server 2012 R2/Server 2016 R2
 
-## Configuration
+## Theme
 
 * Windows Media Center (Black)
 * [Windows Media Center (Blue)](https://github.com/nyhtml/Windows-Media-Center/releases/tag/blue)
