@@ -12,14 +12,11 @@
 ## Theme
 
 * Windows Media Center (Black)
-* Windows Media Center (Blue)
-* Windows Media Center (Green)
+* [Windows Media Center (Blue)](https://github.com/nyhtml/Windows-Media-Center/blob/master/Theme/blue.md)
+* [Windows Media Center (Green)](https://github.com/nyhtml/Windows-Media-Center/blob/master/Theme/green.md)
 * Windows Media Center (Grey)
 * Windows Media Center (Red)
 * Windows Media Center (Yellow)
-
-![blue](https://user-images.githubusercontent.com/2177262/88730654-93ebcd00-d104-11ea-98a8-3fd0eefed85e.png)
-![green](https://user-images.githubusercontent.com/2177262/88730025-22f7e580-d103-11ea-9c22-cd812b0f61fd.png)
 
 ## Releases
 
