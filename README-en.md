@@ -18,6 +18,9 @@
 * Windows Media Center (Red)
 * Windows Media Center (Yellow)
 
+![blue](https://user-images.githubusercontent.com/2177262/88730654-93ebcd00-d104-11ea-98a8-3fd0eefed85e.png)
+![green](https://user-images.githubusercontent.com/2177262/88730025-22f7e580-d103-11ea-9c22-cd812b0f61fd.png)
+
 ## Releases
 
 The latest [releases](https://github.com/nyhtml/Windows-Media-Center/releases) will restore the following Microsoft SQL CE components:
