@@ -1,3 +1,6 @@
+## Windows Media Center Installer (English)
+![WMC](https://github.com/nyhtml/Windows-Media-Center/assets/2177262/e2206ba9-90cf-44ca-9f71-44aa659acf71)
+
 ## Table of Contents
 
 * [Compatibility](#compatibility)
@@ -34,7 +37,3 @@ The latest [releases](https://github.com/nyhtml/Windows-Media-Center/releases) w
 * latest, and last, release is the SQL Server Compact 4.0.
 * as of February 2013 SQL Server Compact Edition had been deprecated
 * has no new versions or updates  planned, although it will continue to receive support until July 2021.
-
-## Windows Media Center Installer (English)
-![WMC](https://github.com/nyhtml/Windows-Media-Center/assets/2177262/e2206ba9-90cf-44ca-9f71-44aa659acf71)
-
