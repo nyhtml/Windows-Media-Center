@@ -21,10 +21,6 @@ ECHO                     from numerous sources
 ECHO                       on the Windows OS.
 ECHO.
 ECHO -----------------------------------------------------------------
-ECHO    Please make sure that you are connected to the Internet.
-ECHO     Looking for older instances of Office in the Control Panel
-ECHO               If found, the install will fail.
-ECHO -----------------------------------------------------------------
 ECHO    Copyright (c) %Year% Stephan Pringle. All rights reserved.
 ECHO -----------------------------------------------------------------
 ECHO.
