@@ -5,6 +5,9 @@ TITLE WMC v%Year%
 :: Get current year using PowerShell (modern systems)
 FOR /F %%i IN ('powershell -NoProfile -Command "Get-Date -Format yyyy"') DO SET Year=%%i
 
+:: Check if script launched with InstallGreen argument for UAC re-run
+if /I "%1"=="InstallGreen" goto InstallGreen
+
 :SELECT
 CLS
 ECHO ----------------------------------------------------------------
@@ -33,6 +36,7 @@ ECHO  4. Windows Media Center (Grey)
 ECHO  5. Windows Media Center (Red)
 ECHO  6. Windows Media Center (Yellow)
 ECHO.
+ECHO  7. Uninstall Windows Media Center
 ECHO  0. Quit
 ECHO.
 
@@ -62,32 +66,32 @@ GOTO SELECT
 :: Installer Labels
 :1
 ECHO Installing WMC with the Black theme...
-CALL black.cmd
+CALL InstallerBLACK
 GOTO DONE
 
 :2
 ECHO Installing WMC with the Blue theme...
-CALL InstallerBLUE.cmd
+CALL InstallerBLUE
 GOTO DONE
 
 :3
 ECHO Installing WMC with the Green theme...
-CALL InstallerGREEN.cmd
+CALL :InstallGreen
 GOTO DONE
 
 :4
 ECHO Installing WMC with the Grey theme...
-CALL InstallerGREY.cmd
+CALL InstallerGREY
 GOTO DONE
 
 :5
 ECHO Installing WMC with the Red theme...
-CALL InstallerRED.cmd
+CALL InstallerRED
 GOTO DONE
 
 :6
 ECHO Installing WMC with the Yellow theme...
-CALL InstallerYELLOW.cmd
+CALL InstallerYELLOW
 GOTO DONE
 
 :DONE
@@ -100,3 +104,45 @@ GOTO SELECT
 ECHO Exiting WMC installer...
 TIMEOUT /T 1 >NUL
 EXIT
+
+:: --- Green Installer Embedded Logic ---
+:InstallGreen
+@echo off
+
+:: Check for admin rights
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+if "%errorlevel%" NEQ "0" (
+    echo: Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    echo: UAC.ShellExecute "%~s0", "InstallGreen", "", "runas", 1 >> "%temp%\getadmin.vbs"
+    "%temp%\getadmin.vbs"
+    del /f /q "%temp%\getadmin.vbs"
+    exit /b
+)
+
+:: Check for 64-bit system
+%windir%\system32\reg.exe query "HKLM\System\CurrentControlSet\Control\Session Manager\Environment" /v PROCESSOR_ARCHITECTURE | find /i "amd64" >nul || (
+    echo ============================================================
+    echo ERROR: This pack is for 64-bit systems.
+    echo ============================================================
+    echo.
+    pause
+    exit /b
+)
+
+:: Check if Media Center already installed
+if exist "%windir%\ehome\ehshell.exe" (
+    echo ============================================================
+    echo ERROR: MediaCenter pack is already installed.
+    echo ============================================================
+    echo.
+    pause
+    exit /b
+)
+
+:: Set console buffer size (optional)
+%windir%\System32\reg.exe add HKU\.DEFAULT\Console\^%%SystemRoot^%%_system32_cmd.exe /v ScreenBufferSize /t REG_DWORD /d 19660880 /f >nul 2>&1
+
+:: Run InstallGREEN.bat with NSudoC for elevated privileges
+bin\NSudoC.exe -U:T -P:E "\"\"%~dp0bin\Installgreen.bat\"\""
+
+goto :eof
