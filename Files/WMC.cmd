@@ -28,9 +28,9 @@ ECHO  Install:
 ECHO  1. Windows Media Center (Black)
 ECHO  2. Windows Media Center (Blue)
 ECHO  3. Windows Media Center (Green)
-ECHO  4. Windows Media Center (Grey)
-ECHO  5. Windows Media Center (Red)
-ECHO  6. Windows Media Center (Yellow)
+ECHO.
+ECHO  Uninstall:
+ECHO  4. Uninstal Windows Media Center (All)
 ECHO.
 ECHO  0. Quit
 ECHO.
@@ -61,7 +61,7 @@ GOTO SELECT
 :: Installer Labels
 :1
 ECHO Installing WMC with the Black theme...
-CALL black.cmd
+CALL InstallerBLACK.cmd
 GOTO DONE
 
 :2
@@ -75,19 +75,10 @@ CALL InstallerGREEN.cmd
 GOTO DONE
 
 :4
-ECHO Installing WMC with the Grey theme...
-CALL InstallerGREY.cmd
+ECHO Uninstalling WMC...
+CALL Uninstaller.cmd
 GOTO DONE
 
-:5
-ECHO Installing WMC with the Red theme...
-CALL InstallerRED.cmd
-GOTO DONE
-
-:6
-ECHO Installing WMC with the Yellow theme...
-CALL InstallerYELLOW.cmd
-GOTO DONE
 
 :DONE
 ECHO.
