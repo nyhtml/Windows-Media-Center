@@ -9,4 +9,3 @@ The Windows Media Center Project
 * [Español (es)](/Documentation/README-es.md)
 * [日本語 (ja)](/Documentation/README-ja.md)
 * [简体中文 (zh-cn)](/Documentation/README-zh-cn.md)
-* 
